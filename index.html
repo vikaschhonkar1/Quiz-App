@@ -1,0 +1,79 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>QuizApp - PlayPower Labs</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+
+  <meta name="theme-color" content="#fafafa">
+  <script defer src="js/main.js"></script>
+</head>
+
+<body>
+
+  <header id="header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="./img/logo-white.png" alt="Not Available" />
+      </div>
+      <div class="header__content">
+        <h1>QuizApp - PlayPower Labs</h1>
+        <h3 id="test-heading">Test Heading</h3>
+        <button class="btn&#45;&#45;light btn&#45;&#45;main" onclick="quizPage()">Start Test</button>
+      </div>
+    </div>
+  </header>
+
+  <section id="section_question" class="py_2 hidden">
+    <div class="container">
+
+      <div class="quiz-container">
+
+        <div class="question-number">
+          <h3>Question <span class="question-num-value" id="question-num-value">1</span> of
+            <span class="total-questions" id="total-questions">4</span>
+          </h3>
+        </div>
+
+        <div class="question" id="question">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident saepe est voluptatum maiores vero.
+          Numquam,
+          neque natus sapiente omnis nemo sunt ipsa. Perspiciatis maiores at rem repudiandae delectus aut accusantium.
+        </div>
+
+        <div class="options" id="options">
+          <!-- options -->
+        </div>
+
+        <div class="button btn">
+          <button type="button" class="btn&#45;&#45;prev" onClick="prevQuestion()">Previous</button>
+          <button type="button" class="btn&#45;&#45;next" onClick="nextQuestion()">Next</button>
+          <button type="button" class="btn&#45;&#45;submit" onclick="submitTest()">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz-score py_2 hidden" id="quiz-score">
+    <div id="quiz-score">
+      <h1>Congratulation You have scored</h1>
+      <span id="quiz-result">4/30</span>
+    </div>
+    <div id="quiz-summary" class="section_question">
+
+    </div>
+  </section>
+
+
+</body>
+
+</html>

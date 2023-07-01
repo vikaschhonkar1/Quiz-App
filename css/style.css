@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  color: #000;
+  background-color: #fff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  font-size: 1.6rem;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+div.container {
+  max-width: 120rem;
+  margin: auto;
+  padding: 0.8rem 2.4rem;
+  overflow: hidden;
+}
+
+.py_1 {
+  padding: 1.5rem 0;
+}
+
+.py_2 {
+  padding: 2rem 0;
+}
+
+.py_3 {
+  padding: 3rem 0;
+}
+
+.py_4 {
+  padding: 4rem 0;
+}
+
+.py_5 {
+  padding: 5rem 0;
+}
+
+.py_6 {
+  padding: 6rem 0;
+}
+
+.py_7 {
+  padding: 7rem 0;
+}
+
+.py_8 {
+  padding: 8rem 0;
+}
+
+.p_1 {
+  padding: 1.5rem;
+}
+
+.p_2 {
+  padding: 2rem;
+}
+
+.p_3 {
+  padding: 3rem;
+}
+
+.p_4 {
+  padding: 4rem;
+}
+
+.p_5 {
+  padding: 5rem;
+}
+
+.p_6 {
+  padding: 6rem;
+}
+
+.my_1 {
+  margin: 1.5rem 0;
+}
+
+.my_2 {
+  margin: 2rem 0;
+}
+
+.my_3 {
+  margin: 3rem 0;
+}
+
+.my_4 {
+  margin: 4rem 0;
+}
+
+.my_5 {
+  margin: 5rem 0;
+}
+
+.my_6 {
+  margin: 6rem 0;
+}
+
+.my_7 {
+  margin: 7rem 0;
+}
+
+.my_8 {
+  margin: 8rem 0;
+}
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.btn--light,
+.btn--text {
+  padding: 0.8rem 2.4rem;
+  text-align: center;
+  border: none;
+  border-radius: 10rem;
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+}
+.btn--light:hover,
+.btn--text:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+.btn--light:active,
+.btn--text:active {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.btn--light {
+  background: #fff;
+  color: #000;
+  border-radius: 10rem;
+}
+.btn--light::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  border-radius: 10rem;
+  background-color: #fff;
+}
+.btn--light:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn--blue {
+  color: #fff;
+  background-color: #1fbad6;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.btn--main {
+  animation: moveUp 0.8s 1 backwards 0.5s;
+}
+
+.btn--text {
+  border-radius: 0;
+  border-bottom: 1px solid #1fbad6;
+  color: #1fbad6;
+}
+.btn--text:hover {
+  background-color: #1fbad6;
+  color: #fff;
+}
+.btn--text:active {
+  background-color: #1fbad6;
+  color: #fff;
+}
+
+.btn--prev {
+  padding: 1rem 3rem;
+  background-color: #1fbad6;
+  font-size: 1.8rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 1rem 0;
+  transition: all 0.5s ease-in-out;
+}
+.btn--prev:hover {
+  background-color: #1ca7c0;
+  transform: translateY(-0.2rem);
+}
+
+.btn--next {
+  padding: 10px 30px;
+  background-color: #1fbad6;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: inline-block;
+  margin: 10px 0;
+  transition: all 0.5s ease-in-out;
+}
+.btn--next:hover {
+  background-color: #1ca7c0;
+  transform: translateY(-0.2rem);
+}
+
+.btn--submit {
+  padding: 1rem 3rem;
+  font-size: 1.8rem;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  display: inline-block;
+  margin: 0.1rem;
+  background-color: #ff1919;
+  float: right;
+  transition: all 0.5s ease-in-out;
+}
+.btn--submit:hover {
+  background-color: #ff5e5e;
+  transform: translateY(-0.2rem);
+}
+
+header#header {
+  color: #fff;
+  height: 95vh;
+  width: 100%;
+  position: relative;
+}
+header#header::before {
+  background: url("../img/home_background.jpeg") no-repeat center center/cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+header#header::after {
+  background: linear-gradient(to right bottom, #1ca7c0, #1fbad6);
+  opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+header#header .header__logo {
+  padding: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header#header .header__logo img {
+  width: 7rem;
+}
+header#header .header__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header#header .header__content h1 {
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  animation: moveRight 1s 1 backwards;
+}
+header#header .header__content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
+  letter-spacing: 1.5rem;
+  animation: moveLeft 1s 1 backwards;
+}
+
+.section_question {
+  height: 100vh;
+}
+.section_question .quiz-container {
+  max-width: 700px;
+  min-height: 500px;
+  background-color: white;
+  margin: 30px auto;
+  border-radius: 8px;
+  padding: 30px;
+}
+.section_question .quiz-container .question {
+  font-size: 24px;
+  color: black;
+  padding: 15px 0;
+  margin-bottom: 20px;
+}
+.section_question .quiz-container .question-number h3 {
+  color: #1ca7c0;
+  border-bottom: 0.1rem solid #eee;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+.section_question .quiz-container .options div {
+  background-color: #eee;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+.section_question .quiz-container .options div:hover {
+  background-color: #999;
+}
+
+.quiz-score {
+  height: 130vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.quiz-score #quiz-score {
+  padding: 1rem;
+  border: 0.2rem solid #1fbad6;
+  border-radius: 2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* Correct and incorrect  */
+
+.label-red{
+  background: #ff5656 !important;
+}
+
+.label-green{
+  background: #22fb01 !important;
+  opacity: 3.5;
+}
